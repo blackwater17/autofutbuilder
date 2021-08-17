@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400&family=Raleway:wght@400;800&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:0;
+    padding:0px;
+    box-sizing: border-box;
+    min-width: 1080px;
+    position: relative;
+    background-color: rgb(17,17,17);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+.loading-img {
+    position: absolute;
+    width: 500px;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    z-index: 11111;
+    text-align: center;
+    margin-top:210px;
+    display: block;
+}
+
+header {
+    margin-bottom: 170px;
+}
+
+
+
+
+.some-form-stuff{
+    margin-top:200px;
+    text-align: center;
+    margin-bottom:200px;
+    border: 1px solid black;
+}
+
+#SQUAD-AREA{
+
+    margin:auto;
+    min-height: 922px;
+    max-width: 1080px;
+    position: relative;
+    
+    background-image: url("/img/fieldbg.png");
+    background-size: cover;
+    background-position-x: 50%;
+    background-repeat: no-repeat;   
+
+    margin-top:160px;
+    display: none;
+    opacity: 1;
+}
+
+.player-box{
+    color:white;
+    width: 160px;
+    height: 232px;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-size: 100%;
+    position: absolute;
+    display: block;
+    z-index: 10;
+
+
+}
+
+
+
+.player-face{
+    position: absolute;
+    min-height: 90px;
+    min-width: 65px;
+    background-repeat: no-repeat;
+
+    right: 29px;
+    bottom: 114px;
+    background-size: 200%; 
+    background-position: 70% 0;
+}
+
+
+.nation{
+    position: absolute;
+    width:21px;
+    height: 21px;
+    left: 31px;
+    bottom: 138px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+}
+
+.club{
+
+    position: absolute;
+    width:21px;
+    height: 21px;
+    left: 31px;
+    bottom: 117px;
+    background-image: url("https://png.pngtree.com/png-vector/20190225/ourmid/pngtree-question-mark-vector-icon-png-image_702552.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.rating{
+    padding-top: 2px;
+    position: absolute;
+    top:30px;
+    left:31px;
+    display: inline-block;
+    font-size:21px;
+
+}
+
+.position{
+
+    padding-top:2px;
+    position: absolute;
+    top:54px;
+    left:31px;
+    display: inline-block;
+    font-size:11px;
+    width: 22px;
+    text-align: center;
+}
+
+.player-name{
+
+    font-size:11px;
+    position: absolute;
+    width: 67%;
+    margin-left:26px;
+    text-align: center;
+    height: 16px;
+    top:124px;
+
+    border-bottom: 1px solid #9DA321;
+
+}
+
+.stat-area{
+    position: absolute;
+    top:143px;
+    left:36px;
+    width: 109px;
+    height: 45px;
+    font-size:11px;
+}
+
+.left-col{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.right-col{
+    width: 50%;
+    height: 100%;
+    float:right;
+}
+
+
+
+
+

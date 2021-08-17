@@ -1,0 +1,63 @@
+#gk{
+    bottom:-40px;
+    margin-left: 50%;
+    margin-right: 50%;
+    transform: translate(-50%, 0%);
+}
+
+
+#cb1{
+    bottom: 200px;
+    left:125px;
+}
+
+#cb2{
+    bottom: 200px;
+    margin-left: 50%;
+    margin-right: 50%;
+    transform: translate(-50%, 0%);
+}
+
+
+#cb3{
+    bottom: 200px;
+    right:125px;
+}
+
+
+#lm1{
+    bottom: 540px;
+    left:32px;
+}
+
+#rm1{
+    bottom: 540px;
+    right:32px;
+}
+
+#cm1{
+    bottom: 420px;
+    left:300px;
+}
+
+#cm2{
+    bottom: 420px;
+    right:300px;
+}
+
+#cam1{
+    bottom:620px;
+    margin-left: 50%;
+    margin-right: 50%;
+    transform: translate(-50%, 0%);
+}
+
+#st1{
+    bottom: 820px;
+    left:300px;
+}
+
+#st2{
+    bottom: 820px;
+    right:300px;
+}

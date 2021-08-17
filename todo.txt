@@ -1,0 +1,31 @@
+1- 5 dakika kesin bekliycem, squad bulursa pop up yok.
+2- Süre yok, her squad bulusta bi sor durayım mı diye. canın sıkılırsa kendin kapatırsın.
+	
+	
+	
+eksikler:
+
+4-skilleri elma armut beraber birleştir height ve pace beraber arayabilsin
+
+00 - ilk 5-6 formation için de ayrı css yüklemesin, jsden çeksin cssyi onu yap.
+
+11420 - oyuncu havuzunu kendi olustursun. ister stata göre, isterse direkt kendi arasın. ona kalmış. max 100 kişiden oluşcak havuz tabi.
+
+15- for each spot, put importance yüzde. then hesapla squad value accordingly. ayrıca yüzde olarak alsın statları
+
+13- squad bulundugu an göster altta, sonra aramaya devam etsin aynı zamanda, adam squadlara bakarken.
+
+14- find squads that "doesnt" include X player.
+
+8- player_ID unique değil galiba ve base_card_idler sıkıntılı. futbinden aldıgını belli ediyor. databasei komple düzenle.
+
+10- timer fonksiyonunu al.   /maybe not required...
+
+3- "doesnt matter" playerları for dongusunde sona bırak, "HERHANGİ" BİR ADAMI KOYSUN yeterki squad olsun.
+
+
+7- her spotun ağırlıgı aynı olmuycak onu ayarla.
+
+11- tek tuşla oyuncu FİYATları güncelle.
+
+99- linkler ....

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/index.css" type="text/css">
+
+    </head>
+
+    <body>
+
+        <header>
+            <a href="/"><img src="/img/fifa20-logo.jpg" height="54px"></a>
+        </header>
+
+        <div class="some-form-stuff">
+            <form id="myform">
+
+                <div class="left-form">
+                    <div class="formation-div">
+                        <label for="formations">Formation:</label>
+
+                        <select id="formations" onchange="update_formation()">
+                            <option value="352">3-5-2</option>
+                            <option value="41212">4-1-2-1-2</option>
+                            <option value="4312" selected>4-3-1-2</option>
+                            <option value="3412">3-4-1-2</option>
+                        </select>
+                    </div>
+
+
+                    <div class="legends">
+                        <input type="radio" id="allow-legends" name="legends" value="allow">
+                        <label for="allow">Allow Legends</label><br>
+                        <input type="radio" id="dont-allow-legends" name="legends" value="dont-allow">
+                        <label for="dont-allow">Don't Allow Legends</label>
+                    </div>
+
+                    <div class="mode">
+                        <input type="radio" id="not-free" name="mode" value="not-free">
+                        <label for="not-free">not-free Mode</label><br>
+                        <input type="radio" id="FREE" name="mode" value="FREE">
+                        <label for="FREE">FREE Mode</label>
+                    </div>
+                </div>
+
+
+                <div class="parameters">
+                    <ul>
+
+                    </ul>
+
+                </div>
+
+            </form>
+
+
+
+        </div>
+
+
+
+
+        <div class="all-single-squads">
+
+            <a class="one-squad-line" href="/show-squad?sqID=1"><div class="squad-rating-area">+1031</div><div class="kadro">Alisson, Robertson, van Dijk, Piqué, Ramos, Vidal, de Jong, Modric, Griezmann, Messi, Hazard,</div><div class="inline-boi" id="formation-display">4312</div><div class="inline-boi" id="nation-league">9N2L</div><div class="inline-boi" id="icon-count">0 Icons</div><div class="inline-boi" id="avg-rating">93</div><div class="price"><img src="https://s3.eu-central-1.amazonaws.com/images.gamesatis.com/user_infos/avatars/000/259/027/original/ersno.png"><div>14,919,090</div></div></a>
+        
+        </div>
+
+        <a href="#"><div class="continue"></div></a>
+
+
+
+    
+    </body>
+
+
+
+
+    <script src="./js/builder-3.js"></script>
+
+</html>

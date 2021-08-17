@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+        <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
+        
+        <title>Auto FUT Builder</title>
+
+        <link rel="stylesheet" href="./css/index.css" type="text/css">
+        <link rel="stylesheet" href="./css/popup.css" type="text/css">
+        <link rel="stylesheet" href="./css/partials.css" type="text/css">
+
+    </head>
+
+    <body>
+
+        
+        {{>header}}
+
+        
+        <div class="filter-popup">
+   
+            <div class="chosen-area">
+                Spot: <span id="chosen-spot"></span>
+            </div>
+        
+   
+
+            <div class="statlar-area">
+
+                <div class="statlar-header"><span>Which stats are important for this position(s)?</span> </div>
+
+
+                <div class="stat-column left-statlar-column">
+
+                    <div class="stat-box">
+                        <div class="stat pace-b stat-category">PACE</div> <!-- PAC-category vardı diğerlerindede vardı.. ! -->
+                            <div class="stat acceleration-b">Acceleration </div>
+                            <div class="stat sprint_speed-b">Sprint Speed  </div>
+                    </div>
+
+
+                    <div class="stat-box">
+                        <div class="stat shooting-b stat-category">SHOOTING</div>
+
+                            <div class="stat positioning-b">Positioning </div>
+                            <div class="stat finishing-b">Finishing </div>
+                            <div class="stat shot_power-b">Shot Power </div>
+                            <div class="stat long_shots-b">Long Shots </div>
+                            <div class="stat volleys-b">Volleys </div>
+                            <div class="stat penalties-b">Penalties </div>
+                    </div>
+
+                    <div class="stat-box">
+                        <div class="stat passing-b stat-category">PASSING</div>
+
+                            <div class="stat vision-b">Vision </div>
+                            <div class="stat crossing-b">Crossing </div>
+                            <div class="stat fk_accuracy-b">Freekick Accuracy </div>
+                            <div class="stat short_passing-b">Short Passing </div>
+                            <div class="stat long_passing-b">Long Passing </div>
+                            <div class="stat curve-b">Curve  </div>
+                    </div>
+
+                    <div class="stat-box">
+                        <div class="stat-category misc-category" id="gk-stats">GOALKEEPER STATS</div>
+
+                            <div class="stat diving-b">DIVING </div>
+                            <div class="stat handling-b">HANDLING </div>
+                            <div class="stat kicking-b">KICKING  </div>
+                            <div class="stat reflexes-b">REFLEXES  </div>
+                            <div class="stat speed-b">SPEED </div>
+                            <div class="stat positioning_base-b">POSITIONING </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+                <div class="stat-column right-statlar-column">
+
+                    <div class="stat-box">
+                        <div class="stat dribbling-b stat-category">DRIBBLING</div>
+
+                            <div class="stat agility-b">Agility  </div>
+                            <div class="stat balance-b">Balance</div>
+                            <div class="stat reactions-b">Reactions </div>
+                            <div class="stat ball_control-b">Ball Control</div>
+                            <div class="stat dribbling_att-b">Dribbling </div>
+                            <div class="stat composure-b">Composure  </div>
+                    </div>
+
+
+                    <div class="stat-box">
+                        <div class="stat defending-b stat-category">DEFENDING</div>
+
+                        <div class="stat interceptions-b">Interceptions </div>
+                        <div class="stat heading_acc-b">Heading </div>
+                        <div class="stat def_awareness-b">Defensive Awareness  </div>
+                        <div class="stat standing_tackle-b">Standing Tackle </div>
+                        <div class="stat sliding_tackle-b">Sliding Tackle </div>
+
+                    </div>
+
+
+                    <div class="stat-box">
+                        <div class="stat physicality-b stat-category">PHYSICALITY</div>
+
+                            <div class="stat jumping-b">Jumping </div>
+                            <div class="stat stamina-b">Stamina </div>
+                            <div class="stat strength-b">Strength </div>
+                            <div class="stat aggression-b">Aggression </div>
+                    </div>
+
+                    <div class="stat-box">
+                        <div class="stat-category misc-category">OTHER</div>
+                        
+                            <div class="stat rating-b">Rating  </div>
+                            <div class="stat base_total-b">Base Total </div>
+                            <div class="stat ingame_total-b">ingame Total  </div>
+                            <div class="stat skills-b">Skills </div>
+                            <div class="stat weak_foot-b">Weak Foot  </div>
+                            <div class="stat height-b">Height  </div>
+                            <div class="stat weight-b">Weight  </div>
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="buttons-area-0">
+                    <div class="go-to-doll go-button">Adjust Weights</div>
+                    <div class="go-ez-mode go-button">[auto] Distribute weights equally</div>
+                    <div class="cancel-filtering go-button">Cancel</div>
+                </div>
+    
+            </div> 
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            <div class="doll-area">
+    
+                <div class="doll-header"><span>Set importance levels (weights):</span> </div>
+                <!-- <div class="remaining-points">Points available: <span>20</span></div> -->
+    
+                <div class="cont-container">
+    
+                    <div class="left-cont-container">
+
+                        <div class="slidecontainer">
+                            <div class="stat-title">STAT_TITLE</div>
+                            <input type="range" min="0" max="26" value="0" class="slider-0">
+                            <p>Effect on player: <span class="demo">0</span></p>
+                        </div>
+            
+                        <div class="slidecontainer">
+                            <div class="stat-title">STAT_TITLE</div>
+                            <input type="range" min="0" max="26" value="0" class="slider-0">
+                            <p>Effect on player: <span class="demo">0</span></p>
+                        </div>
+            
+                        <div class="slidecontainer">
+                            <div class="stat-title">STAT_TITLE</div>
+                            <input type="range" min="0" max="26" value="0" class="slider-0">
+                            <p>Effect on player: <span class="demo">0</span></p>
+                        </div>
+            
+                        <div class="slidecontainer">
+                            <div class="stat-title">STAT_TITLE</div>
+                            <input type="range" min="0" max="26" value="0" class="slider-0">
+                            <p>Effect on player: <span class="demo">0</span></p>
+                        </div>
+
+                        <div class="slidecontainer">
+                            <div class="stat-title">STAT_TITLE</div>
+                            <input type="range" min="0" max="26" value="0" class="slider-0">
+                            <p>Effect on player: <span class="demo">0</span></p>
+                    </div>
+
+                    </div>
+
+
+                    <div class="right-cont-container">
+   
+                        <div class="slidecontainer">
+                            <div class="stat-title">STAT_TITLE</div>
+                            <input type="range" min="0" max="26" value="0" class="slider-0">
+                            <p>Effect on player: <span class="demo">0</span></p>
+                        </div>
+            
+                        <div class="slidecontainer">
+                            <div class="stat-title">STAT_TITLE</div>
+                            <input type="range" min="0" max="26" value="0" class="slider-0">
+                            <p>Effect on player: <span class="demo">0</span></p>
+                        </div>
+            
+                        <div class="slidecontainer">
+                            <div class="stat-title">STAT_TITLE</div>
+                            <input type="range" min="0" max="26" value="0" class="slider-0">
+                            <p>Effect on player: <span class="demo">0</span></p>
+                        </div>
+            
+                        <div class="slidecontainer">
+                            <div class="stat-title">STAT_TITLE</div>
+                            <input type="range" min="0" max="26" value="0" class="slider-0">
+                            <p>Effect on player: <span class="demo">0</span></p>
+                        </div>
+            
+                        <div class="slidecontainer">
+                            <div class="stat-title">STAT_TITLE</div>
+                            <input type="range" min="0" max="26" value="0" class="slider-0">
+                            <p>Effect on player: <span class="demo">0</span></p>
+                        </div>
+            
+                    </div>
+
+        
+                </div>
+    
+    
+                <div class="buttons-area">
+                    <button value="Submit" class="filter-button submit-filter">Add filters!</button>
+                    <button value="Cancel" class="filter-button cancel-filter">Cancel</button>
+                </div>
+    
+            </div>
+        
+    
+        </div>
+
+
+
+
+        <div class="found-squads-title">- FOUND SQUADS - </div>
+
+        <div class="loading-area">
+
+            <img width="800px" src="/img/oth/loading1.gif">
+
+
+        </div>
+
+
+
+        <div class="phase" id="phase-1">
+
+            <div class="yeni-formation-div">
+
+                <div class="rule-header">
+                    <span>1.</span> Choose a formation:</label></br>
+                </div>
+
+                <select id="formations">
+                        <option value="" selected>&nbsp;Formation</option>
+                        <option value="3-1-4-2">&nbsp;3-1-4-2</option>
+                        <option value="3-4-1-2">&nbsp;3-4-1-2</option>
+                        <option value="3-4-2-1">&nbsp;3-4-2-1</option>
+                        <option value="3-4-3">&nbsp;3-4-3</option>
+                        <option value="3-5-2">&nbsp;3-5-2</option>
+                        <option value="4-1-2-1-2">&nbsp;4-1-2-1-2</option>
+                        <option value="4-1-2-1-2 (2)">&nbsp;4-1-2-1-2 (2)</option>
+                        <option value="4-1-3-2">&nbsp;4-1-3-2</option>
+                        <option value="4-1-4-1">&nbsp;4-1-4-1</option>
+                        <option value="4-2-3-1">&nbsp;4-2-3-1</option>
+                        <option value="4-2-3-1 (2)">&nbsp;4-2-3-1 (2)</option>
+                        <option value="4-2-2-2">&nbsp;4-2-2-2</option>
+                        <option value="4-2-4">&nbsp;4-2-4</option>
+                        <option value="4-3-1-2">&nbsp;4-3-1-2</option>
+                        <option value="4-3-2-1">&nbsp;4-3-2-1</option>
+                        <option value="4-3-3">&nbsp;4-3-3</option>
+                        <option value="4-3-3 (2)">&nbsp;4-3-3 (2)</option>
+                        <option value="4-3-3 (3)">&nbsp;4-3-3 (3)</option>
+                        <option value="4-3-3 (4)">&nbsp;4-3-3 (4)</option>
+                        <option value="4-3-3 (5)">&nbsp;4-3-3 (5)</option>
+                        <option value="4-4-1-1">&nbsp;4-4-1-1</option>
+                        <option value="4-4-1-1 (2)">&nbsp;4-4-1-1 (2)</option>
+                        <option value="4-4-2">&nbsp;4-4-2</option>
+                        <option value="4-4-2 (2)">&nbsp;4-4-2 (2)</option>
+                        <option value="4-5-1">&nbsp;4-5-1</option>
+                        <option value="4-5-1 (2)">&nbsp;4-5-1 (2)</option>
+                        <option value="5-2-1-2">&nbsp;5-2-1-2</option>
+                        <option value="5-2-2-1">&nbsp;5-2-2-1</option>
+                        <option value="5-3-2">&nbsp;5-3-2</option>
+                        <option value="5-4-1">&nbsp;5-4-1</option>
+
+                </select>
+            </div>
+
+        </div>
+
+
+        <div class="phase" id="phase-2">
+
+            <div class="rule-header">
+                <span>2.</span> Set parameters.</label></br>
+            </div>
+
+
+        </div>
+
+
+        <div class="phase" id="phase-3">
+            <div class="rule-header">
+                <span>3.</span> Additional infos</label></br>
+            </div>
+            <div class="some-form-stuff">
+                <div id="myform">
+
+                    <div class="left-form">
+
+                        <div class="one-toggle-area">
+                            <label class="switch">
+                                <input type="checkbox" id="icons-toggle">
+                                <span class="slider round"></span>
+                            </label>
+                            <span class="check-span allow-legends-span">Allow icons</span> 
+                        </div>
+
+                        <div class="one-toggle-area">
+                            <label class="switch">
+                                <input type="checkbox" id="mode-toggle">
+                                <span class="slider round"></span>
+                            </label>
+                            <span class="check-span allow-free-mode-span">Allow inappropriate position changes (Like ST->CM, CDM->CF)</span> 
+                        </div>
+
+                        <div class="one-toggle-area">
+                            <label class="switch">
+                                <input type="checkbox" id="chem-toggle">
+                                <span class="slider round"></span>
+                            </label>
+                            <span class="check-span allow-7-chem-span">Allow 7 chem. players</span> 
+                        </div>
+
+
+                        <div class="one-toggle-area">
+                            <label class="switch">
+                                <input type="checkbox" id="nlw-toggle">
+                                <span class="slider round"></span>
+                            </label>
+                            <span class="check-span only-nlw-span">Only find NLW squads</span> 
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="est-budget-div">
+                       <div class="budget-text">Budget: </div>
+                       <input type="text" class="est-budget" value="999,999,999" maxlength="11" onClick="this.select();"  onkeyup="budget_comma()">
+                    </div>
+
+                    
+                    <a href="#"><div class="continue" onclick="return false;"></div></a>
+                    
+                    <!-- basta bu vardı 
+                    <label for="fname"><span>&#9888;</span>
+                    -->
+
+                </div>
+        </div>
+
+
+        </div>
+
+        <div class="unknown-squad-area">
+
+            <a class="filter-player-box" id="gk"><div></div></a>
+            <a class="filter-player-box" id="cb1"><div></div></a>
+            <a class="filter-player-box" id="cb2"><div></div></a>
+            <a class="filter-player-box" id="cb3"><div></div></a>
+            <a class="filter-player-box" id="lm1"><div></div></a>
+            <a class="filter-player-box" id="cm1"><div></div></a>
+            <a class="filter-player-box" id="cm2"><div></div></a>
+            <a class="filter-player-box" id="rm1"><div></div></a>
+            <a class="filter-player-box" id="cam1"><div></div></a>
+            <a class="filter-player-box" id="st1"><div></div></a>
+            <a class="filter-player-box" id="st2"><div></div></a>
+
+
+
+        </div>
+
+
+        <div class="default-configs">
+            <div class="simdi-goster">Select filters for chosen player(s)</div>
+
+        </div>
+
+
+
+
+        <button id="next-phase">CONTINUE</button>
+
+        
+ 
+
+
+
+        <div class="all-single-squads">
+
+            <!--
+            <a class="one-squad-line" href="/show-squad?sqID=1">
+                
+                <div class="squad-rating-area">+1031</div>
+                <div class="kadro">Alisson, Robertson, van Dijk, Piqué, Ramos, Vidal, de Jong, Modric, Griezmann, Messi, Hazard,</div>
+                <div class="inline-boi" id="formation-display">4312</div>
+                <div class="inline-boi" id="nation-league">9N2L</div>
+                <div class="inline-boi" id="icon-count">0 Icons</div>
+                <div class="inline-boi" id="avg-rating">93</div>
+                
+                <div class="price">
+                    <img src="https://s3.eu-central-1.amazonaws.com/images.gamesatis.com/user_infos/avatars/000/259/027/original/ersno.png">
+                    <div>14,919,090</div>
+                </div>
+            
+            </a>
+        
+        -->
+
+        </div>
+
+    </body>
+
+
+  <!--  
+  <script src="https://unpkg.com/react@15/dist/react.js"></script>
+  <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
+  <script src="/scripts/app.js"></script>
+  -->
+
+    <script src="./js/index-formation-setter.js"></script>
+    <script src="./js/all_functions.js"></script>   
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+
+ 
+    </html>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         

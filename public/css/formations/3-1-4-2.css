@@ -1,0 +1,63 @@
+#gk {
+    bottom: -40px;
+    margin-left: 50%;
+    margin-right: 50%;
+    transform: translate(-50%, 0%);
+}
+
+#cb1 {
+    bottom: 200px;
+    left: 125px;
+
+}
+
+#cb2 {
+    bottom : 200px;
+    margin-left : 50%;
+    margin-right : 50%;
+    transform : translate(-50%, 0%);
+}
+
+#cb3 {
+    bottom: 200px;
+    right: 125px;
+
+}
+
+#lm1 {
+    bottom : 588px;
+    left: 44px;
+}
+
+#rm1 {
+    bottom : 588px;
+    right : 44px;
+}
+
+#cm1 {
+    bottom : 539px;
+    left : 260px;
+}
+
+#cm3 {
+    bottom : 539px;
+    right : 260px;
+}
+
+#cm2 {
+    bottom : 420px;
+    margin-left : 50%;
+    margin-right : 50%;
+    transform : translate(-50%, 0%)
+}
+
+#st1 {
+    bottom : 820px;
+    left : 300px
+}
+
+#st2 {
+    bottom : 820px;
+    right : 300px
+}
+

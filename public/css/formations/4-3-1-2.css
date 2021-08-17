@@ -1,0 +1,66 @@
+#gk{
+    bottom:25px;
+    margin-left: 50%;
+    margin-right: 50%;
+    transform: translate(-50%, 0%);
+}
+
+#lb{
+    left: 25px;
+    bottom:275px;
+}
+
+
+#rb{
+    right: 25px;
+    bottom:275px;
+}
+
+
+
+#cb1{
+    bottom: 205px;
+    left:280px;
+}
+
+#cb2{
+    bottom: 205px;
+    right:280px;
+}
+
+#cm1{
+    bottom: 470px;
+    left:200px;
+}
+
+#cm3{
+    bottom: 470px;
+    right:200px;
+
+}
+
+#cm2{
+    bottom:400px;
+    margin-left: 50%;
+    margin-right: 50%;
+    transform: translate(-50%, 0%);
+}
+
+
+#cam{
+    bottom:632px;
+    margin-left: 50%;
+    margin-right: 50%;
+    transform: translate(-50%, 0%);
+}
+
+
+#st1{
+    bottom: 820px;
+    left:300px;
+}
+
+#st2{
+    bottom: 820px;
+    right:300px;
+}

@@ -1,0 +1,286 @@
+.statlar-area {
+    margin: 0 auto;
+    width: 100%; /* 1400*/
+    /* min-height: 300px; */
+}
+
+.statlar-header {
+    display: inline-block;
+    width: 100%;
+    color:#FFDC00;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+
+
+.stat-column {
+    width: 50%;
+}
+
+.left-statlar-column {
+    float:left;
+}
+
+.right-statlar-column {
+    float:right;
+}
+
+.statlar-header span, .doll-header span {
+    border-bottom: 2px solid gold;
+}
+
+
+.stat {
+    display: inline-block;
+    margin: 12px;
+    width:162px;
+    font-size:15px;
+    padding: 9px;
+    cursor: pointer;
+    text-align: center;
+    /* 150px width, 23px font ,margin 17*/
+    transition: .5s ease-in-out;
+}
+
+
+
+.stat:active {
+    opacity:1;
+    background-color: #FFDC00;
+    color:#131313;
+}
+
+
+
+
+.stat-category {
+    width: 100%;
+    height:35px;
+    margin: 30px 0 0 0;
+    line-height: 35px;
+    font-size: 30px;
+    padding:8px;
+    text-align: left;
+    color:#131313;
+    display: block;
+    cursor: pointer;
+
+    background-image: linear-gradient(40deg, #FFEFBA, #FFFFFF); 
+    
+
+}
+
+
+.stat-box {
+    height: 230px;
+    width: 90%;
+}
+
+.misc-category {
+    cursor: not-allowed;
+}
+
+
+
+
+
+
+.buttons-area-0 {
+    width: 100%;
+    height: 130px;
+    text-align: center;
+    margin-bottom:32px;
+    margin-top:29px;
+
+}
+
+.go-button{
+    display: inline-block;
+
+    letter-spacing: 1px;
+    margin:24px 20px;
+    text-align: center;
+    cursor: pointer;
+    width: 560px;
+    height: 46px;
+    line-height: 45px;
+    bottom: 17px;
+    font-size: 24px;
+    color: white;
+    background-image: linear-gradient(40deg, #001f3f, red);  
+    border-radius: 10px;
+    transition: .2s ease;
+ 
+    padding: 10px;
+}
+
+.buttons-area-0 {
+    display: inline-block;
+    margin-top:55px;
+}
+
+
+.go-to-doll, .cancel-filtering {
+    width: 250px;
+}
+
+
+
+
+
+
+.doll-area {
+    margin: 0 auto;
+    margin-top:20px;
+
+    width:1280px;
+    text-align: center;
+    display: none;
+
+    /* background-image:url("https://images.unsplash.com/photo-1550684376-efcbd6e3f031?ixlib=rb-1.2.1&w=1000&q=80"); */
+    background-image: linear-gradient(40deg,#0F2027 , #203A43, #2C5364); 
+    background-size:cover;
+    background-position: 40% 50%;
+
+}
+
+.doll-header {
+    margin-top:15px;
+    color:#FFDC00;
+    font-size: 50px;
+    margin-bottom: 32px;
+    padding-top: 20px;
+}
+
+
+.remaining-points {
+    font-size:56px;
+    color:white;
+}
+
+.remaining-points span {
+    color:greenyellow;
+}
+
+
+
+
+
+.slidecontainer {
+    width: 89%;
+    margin: 0 auto;
+    margin-top:20px; /* 60dı */
+    margin-bottom: 70px; /* 100dü */
+}
+
+.slidecontainer p{
+
+    font-size:24px;
+    color: #eee;
+}
+
+.slidecontainer p span {
+    color:gold;
+}
+  
+.slider-0 {
+    margin: 0 auto;
+    -webkit-appearance: none;
+    height: 10px; /* 30du */
+    width: 85%;
+    background: #AAAAAA;
+
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider-0:hover {
+    opacity: 1;
+}
+
+.slider-0::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 43px;
+    height: 43px; /* 66 */
+    border-radius: 50%;
+    background: #FFDC00;
+    cursor: pointer;
+}
+
+.slider-0::-moz-range-thumb {
+    width: 43px;
+    height: 43px; /* 66 */
+    background: #FFDC00;
+    cursor: pointer;
+}
+
+
+.stat-title {
+    font-size:28px;
+    color: #FFDC00;
+    margin-bottom:19px; /* 27 idi */
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+.buttons-area {
+    width: 100%;
+    height: 130px;
+    justify-content: center;
+    display: flex;
+    margin-bottom:40px;
+
+}
+
+
+.filter-button {
+    float:left;
+
+    outline: none;
+    letter-spacing: 1px;
+    margin:24px 10px;
+    text-align: center;
+    cursor: pointer;
+    width: 240px;
+    height: 63px;
+    bottom: 17px;
+    font-size: 31px;
+    color: #eee;
+
+    padding: 10px;
+
+    background-image: linear-gradient(40deg, #001f3f, red);  
+    border-radius: 10px;
+    transition: .2s ease;
+}
+
+
+
+.left-cont-container {
+    float: left;
+    width: 50%;
+
+}
+
+.right-cont-container {
+    float: left;
+    width: 50%;
+
+}
+
+
+

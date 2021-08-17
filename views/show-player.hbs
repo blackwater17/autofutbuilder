@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+
+<html>
+
+
+    <link rel="stylesheet" href="../css/show_player.css" type="text/css">
+
+    <body>
+        {{>header}}
+
+              <div class="filter-popup">
+            
+            <div class="price-area">
+
+                <img width="26px" src="/img/oth/coins.png">
+                <label for="fname" id="price-label">Price:</label><input type="text" class="text-input-area" id="max-price" value="1500000" maxlength="8" onkeyup="this.value=this.value.replace(/[^\d]/,'')" >
+
+            </div>
+
+
+            <div class="cat1">
+                <label for="fname">PACE</label><input type="text" class="text-input-area" id="pace" value={{chosen_player.pace}} maxlength="2"><br>
+                <label for="fname">SHOOTING</label><input type="text" class="text-input-area" id="shooting" value={{chosen_player.shooting}} maxlength="2"><br>
+                <label for="fname">PASSING</label><input type="text" class="text-input-area" id="passing" value={{chosen_player.passing}} maxlength="2"><br>
+                <label for="fname">DRIBBLING</label><input type="text" class="text-input-area" id="dribbling" value={{chosen_player.dribbling}} maxlength="2"><br>
+                <label for="fname">DEFENDING</label><input type="text" class="text-input-area" id="defending" value={{chosen_player.defending}} maxlength="2"><br>
+                <label for="fname">PHYSICALITY</label><input type="text" class="text-input-area" id="physicality" value={{chosen_player.physicality}} maxlength="2"><br>
+                <label for="fname">Acceleration</label><input type="text" class="text-input-area" id="acceleration" value={{chosen_player.acceleration}} maxlength="2"><br>
+                <label for="fname">Sprint Speed</label><input type="text" class="text-input-area" id="sprint_speed" value={{chosen_player.sprint_speed}} maxlength="2"><br>
+                <label for="fname">Positioning</label><input type="text" class="text-input-area" id="positioning" value={{chosen_player.positioning}} maxlength="2"><br>
+                <label for="fname">Finishing</label><input type="text" class="text-input-area" id="finishing" value={{chosen_player.finishing}} maxlength="2"><br>
+                <label for="fname">Shot Power</label><input type="text" class="text-input-area" id="shot_power" value={{chosen_player.shot_power}} maxlength="2"><br>
+                <label for="fname">Long Shots</label><input type="text" class="text-input-area" id="long_shots" value={{chosen_player.long_shots}} maxlength="2"><br>
+                <label for="fname">Volleys</label><input type="text" class="text-input-area" id="volleys" value={{chosen_player.volleys}} maxlength="2"><br>
+
+            </div>
+
+            <div class="cat1">
+                <label for="fname">Penalties</label><input type="text" class="text-input-area" id="penalties" value={{chosen_player.penalties}} maxlength="2"><br>
+                <label for="fname">Vision</label><input type="text" class="text-input-area" id="vision" value={{chosen_player.vision}} maxlength="2"><br>
+                <label for="fname">Crossing</label><input type="text" class="text-input-area" id="crossing" value={{chosen_player.crossing}} maxlength="2"><br>
+                <label for="fname">Free Acc.</label><input type="text" class="text-input-area" id="fk_accuracy" value={{chosen_player.fk_accuracy}} maxlength="2"><br>
+                <label for="fname">Short Pass.</label><input type="text" class="text-input-area" id="short_passing" value={{chosen_player.short_passing}} maxlength="2"><br>
+                <label for="fname">Long Passing</label><input type="text" class="text-input-area" id="long_passing" value={{chosen_player.long_passing}} maxlength="2"><br>
+                <label for="fname">Curve</label><input type="text" class="text-input-area" id="curve" value={{chosen_player.curve}} maxlength="2"><br>
+                <label for="fname">Agility</label><input type="text" class="text-input-area" id="agility" value={{chosen_player.agility}} maxlength="2"><br>
+                <label for="fname">Balance</label><input type="text" class="text-input-area" id="balance" value={{chosen_player.balance}} maxlength="2"><br>
+                <label for="fname">Reactions</label><input type="text" class="text-input-area" id="reactions" value={{chosen_player.reactions}} maxlength="2"><br>
+                <label for="fname">Ball Control</label><input type="text" class="text-input-area" id="ball_control" value={{chosen_player.ball_control}} maxlength="2"><br>
+                <label for="fname">Dribbling</label><input type="text" class="text-input-area" id="dribbling_att" value={{chosen_player.dribbling_att}} maxlength="2"><br>
+                <label for="fname">Composure</label><input type="text" class="text-input-area" id="composure" value={{chosen_player.composure}} maxlength="2"><br>
+
+            </div>
+
+            <div class="cat1">
+                <label for="fname">Interceptions</label><input type="text" class="text-input-area" id="interceptions" value={{chosen_player.interceptions}} maxlength="2"><br>
+                <label for="fname">Heading</label><input type="text" class="text-input-area" id="heading_acc" value={{chosen_player.heading_acc}} maxlength="2"><br>
+                <label for="fname">Def Aware.</label><input type="text" class="text-input-area" id="def_awareness" value={{chosen_player.def_awareness}} maxlength="2"><br>
+                <label for="fname">Stand Tackle</label><input type="text" class="text-input-area" id="standing_tackle" value={{chosen_player.standing_tackle}} maxlength="2"><br>
+                <label for="fname">Sliding Tack.</label><input type="text" class="text-input-area" id="sliding_tackle" value={{chosen_player.sliding_tackle}} maxlength="2"><br>
+                <label for="fname">Jumping</label><input type="text" class="text-input-area" id="jumping" value={{chosen_player.jumping}} maxlength="2"><br>
+                <label for="fname">Stamina</label><input type="text" class="text-input-area" id="stamina" value={{chosen_player.stamina}} maxlength="2"><br>
+                <label for="fname">Strength</label><input type="text" class="text-input-area" id="strength" value={{chosen_player.strength}} maxlength="2"><br>
+                <label for="fname">Aggression</label><input type="text" class="text-input-area" id="aggression" value={{chosen_player.aggression}} maxlength="2"><br>
+                <label for="fname">Base Total</label><input type="text" class="text-input-area" id="base_total" value={{chosen_player.base_total}} maxlength="2"><br>
+                <label for="fname">ingame Total</label><input type="text" class="text-input-area" id="ingame_total" value={{chosen_player.ingame_total}} maxlength="2"><br>
+                <label for="fname">Skills</label><input type="text" class="text-input-area" id="skills" value={{chosen_player.skills}} maxlength="2"><br>
+                <label for="fname">Weak Foot</label><input type="text" class="text-input-area" id="weak_foot" value={{chosen_player.weak_foot}} maxlength="2"><br>
+
+            </div>
+
+            <div class="cat1">
+                <label for="fname">Height</label><input type="text" class="text-input-area" id="height" value={{chosen_player.height}} maxlength="2"><br>
+                <label for="fname">Weight</label><input type="text" class="text-input-area" id="weight" value={{chosen_player.weight}} maxlength="2"><br>
+                <label for="fname">Rating</label><input type="text" class="text-input-area" id="rating" value={{chosen_player.rating}} maxlength="2"><br>
+                <label for="fname">DIVING</label><input type="text" class="text-input-area" id="diving" value={{chosen_player.diving}} maxlength="2"><br>
+                <label for="fname">HANDLING</label><input type="text" class="text-input-area" id="handling" value={{chosen_player.handling}} maxlength="2"><br>
+                <label for="fname">KICKING</label><input type="text" class="text-input-area" id="kicking" value={{chosen_player.kicking}} maxlength="2"><br>
+                <label for="fname">REFLEXES</label><input type="text" class="text-input-area" id="reflexes" value={{chosen_player.reflexes}} maxlength="2"><br>
+                <label for="fname">SPEED</label><input type="text" class="text-input-area" id="speed" value={{chosen_player.speed}} maxlength="2"><br>
+                <label for="fname">POSITION.</label><input type="text" class="text-input-area" id="positioning_base" value={{chosen_player.positioning_base}} maxlength="2"><br>
+                <label for="fname">-</label><input type="text" class="text-input-area" sil_id="fname" value="-" maxlength="2"><br>
+                <label for="fname">-</label><input type="text" class="text-input-area" sil_id="fname" value="-" maxlength="2"><br>
+                <label for="fname">-</label><input type="text" class="text-input-area" sil_id="fname" value="-" maxlength="2"><br>
+                <label for="fname">-</label><input type="text" class="text-input-area" sil_id="fname" value="-" maxlength="2"><br>
+
+            </div>
+
+            <div class="cat1">
+                <label for="fname">-</label><input type="text" class="text-input-area" sil_id="fname" value="-" maxlength="2"><br>
+                <label for="fname">-</label><input type="text" class="text-input-area" sil_id="fname" value="-" maxlength="2"><br>
+                <label for="fname">-</label><input type="text" class="text-input-area" sil_id="fname" value="-" maxlength="2"><br>
+                <label for="fname">-</label><input type="text" class="text-input-area" sil_id="fname" value="-" maxlength="2"><br>
+                <label for="fname">-</label><input type="text" class="text-input-area" sil_id="fname" value="-" maxlength="2"><br>
+                <label for="fname">-</label><input type="text" class="text-input-area" sil_id="fname" value="-" maxlength="2"><br>
+                <label for="fname">-</label><input type="text" class="text-input-area" sil_id="fname" value="-" maxlength="2"><br>
+                <label for="fname">-</label><input type="text" class="text-input-area" sil_id="fname" value="-" maxlength="2"><br>
+                <label for="fname">-</label><input type="text" class="text-input-area" sil_id="fname" value="-" maxlength="2"><br>
+                <label for="fname">-</label><input type="text" class="text-input-area" sil_id="fname" value="-" maxlength="2"><br>
+                <label for="fname">-</label><input type="text" class="text-input-area" sil_id="fname" value="-" maxlength="2"><br>
+                <label for="fname">-</label><input type="text" class="text-input-area" sil_id="fname" value="-" maxlength="2"><br>
+                <label for="fname"></label><input type="text" class="text-input-area" sil_id="fname" value="-" maxlength="2"><br>
+
+            </div>
+
+
+
+
+            
+
+        </div> 
+    </body>
+
+
+    <script src="../js/show-player.js"></script>
+
+</html>
